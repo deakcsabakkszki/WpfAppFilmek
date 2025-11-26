@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="Filmek" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="FilmekDG" Grid.Column="1" />
+        <StackPanel>
+            <Button Content="Filmek betöltése" Click="FilmBetolt_Click"/>
+        </StackPanel>
+
 
     </Grid>
 </Window>
