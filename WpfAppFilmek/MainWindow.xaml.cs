@@ -76,5 +76,11 @@ namespace WpfAppFilmek
             }
             MessageBox.Show($"{atlag / index} a filmek értékelésének átlaga");
         }
+
+        private void CsakScifiSzures(object sender, RoutedEventArgs e)
+        {
+            var scifi = filmList.Where(f=>f.Mufaj.Equals("sci-fi")).ToList();
+            FilmekDG.ItemsSource=scifi;
+        }
     }
 }

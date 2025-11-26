@@ -17,6 +17,8 @@
             <Button Content="Hány film van" Click="FilmekSzama_Click" Margin="5"/>
             <Button Content="Leghosszabb film" Click="LeghosszabbFilmClick" Margin="5"/>
             <Button Content="Átlag értékelés" Margin="5" Click="AtlagErtekeles"/>
+            <Button Content="Csak sci-fi" Margin="5" Click="CsakScifiSzures"/>
+            
         </StackPanel>
 
 
