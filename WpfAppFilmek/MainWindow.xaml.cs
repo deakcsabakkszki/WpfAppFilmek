@@ -97,5 +97,11 @@ namespace WpfAppFilmek
             }
             FilmekDG.ItemsSource = cimNevek;
         }
+
+        private void jolErtekelt(object sender, RoutedEventArgs e)
+        {
+            var ertekeles = filmList.Where(f => f.Ertekeles>8).ToList();
+            FilmekDG.ItemsSource = ertekeles;
+        }
     }
 }
