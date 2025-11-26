@@ -47,5 +47,10 @@ namespace WpfAppFilmek
             filmList.Add(new Film("Shrek", "animáció", 90, 7.9));
             FilmekDG.ItemsSource = filmList;
         }
+
+        private void FilmekSzama_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Összesen {filmList.Count} film van");
+        }
     }
 }
