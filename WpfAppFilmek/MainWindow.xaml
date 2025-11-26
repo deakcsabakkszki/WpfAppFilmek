@@ -18,7 +18,8 @@
             <Button Content="Leghosszabb film" Click="LeghosszabbFilmClick" Margin="5"/>
             <Button Content="Átlag értékelés" Margin="5" Click="AtlagErtekeles"/>
             <Button Content="Csak sci-fi" Margin="5" Click="CsakScifiSzures"/>
-            
+            <Button Content="Csak címek" Margin="5" Click="CsakCimek"/>
+
         </StackPanel>
 
 

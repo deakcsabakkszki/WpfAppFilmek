@@ -82,5 +82,20 @@ namespace WpfAppFilmek
             var scifi = filmList.Where(f=>f.Mufaj.Equals("sci-fi")).ToList();
             FilmekDG.ItemsSource=scifi;
         }
+
+        public class cimNevek()
+        {
+            public string Cim { get; set; } 
+        }
+
+        private void CsakCimek(object sender, RoutedEventArgs e)
+        {
+            List<cimNevek> cimNevek = new List<cimNevek>();
+            foreach (var item in filmList)
+            {
+                cimNevek.Add(new cimNevek { Cim = item.Cim });
+            }
+            FilmekDG.ItemsSource = cimNevek;
+        }
     }
 }
