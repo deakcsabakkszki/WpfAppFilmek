@@ -15,6 +15,7 @@
         <StackPanel>
             <Button Content="Filmek betöltése" Click="FilmBetolt_Click" Margin="5"/>
             <Button Content="Hány film van" Click="FilmekSzama_Click" Margin="5"/>
+            <Button Content="Leghosszabb film" Click="LeghosszabbFilmClick" Margin="5"/>
         </StackPanel>
 
 

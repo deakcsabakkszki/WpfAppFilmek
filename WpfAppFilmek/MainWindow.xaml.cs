@@ -52,5 +52,17 @@ namespace WpfAppFilmek
         {
             MessageBox.Show($"Összesen {filmList.Count} film van");
         }
+
+        private void LeghosszabbFilmClick(object sender, RoutedEventArgs e)
+        {
+            if (filmList != null && filmList.Count>0)
+            {
+                MessageBox.Show("A leghosszabb film: " + filmList.OrderByDescending(f => f.Hossz).First().Cim);
+            }
+            else
+            {
+                MessageBox.Show("Nincsenek betöltve a filmek.");
+            }
+        }
     }
 }
