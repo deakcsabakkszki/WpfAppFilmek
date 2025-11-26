@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <DataGrid x:Name="FilmekDG" Grid.Column="1" />
         <StackPanel>
-            <Button Content="Filmek betöltése" Click="FilmBetolt_Click"/>
+            <Button Content="Filmek betöltése" Click="FilmBetolt_Click" Margin="5"/>
         </StackPanel>
 
 

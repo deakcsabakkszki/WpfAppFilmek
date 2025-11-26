@@ -39,6 +39,12 @@ namespace WpfAppFilmek
 
         private void FilmBetolt_Click(object sender, RoutedEventArgs e)
         {
+
+            filmList.Add(new Film("Csillagok Háborúja", "sci-fi", 121, 8.6));
+            filmList.Add(new Film("Titanic", "dráma", 195, 7.8));
+            filmList.Add(new Film("A Gyűrük Ura", "fantasy", 201, 8.8));
+            filmList.Add(new Film("Mátrix", "sci-fi", 136, 8.7));
+            filmList.Add(new Film("Shrek", "animáció", 90, 7.9));
             FilmekDG.ItemsSource = filmList;
         }
     }
