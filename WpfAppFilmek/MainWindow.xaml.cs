@@ -103,5 +103,11 @@ namespace WpfAppFilmek
             var ertekeles = filmList.Where(f => f.Ertekeles>8).ToList();
             FilmekDG.ItemsSource = ertekeles;
         }
+
+        private void cimRend(object sender, RoutedEventArgs e)
+        {
+            var rendezes = filmList.OrderBy(f=> f.Cim).ToList();
+            FilmekDG.ItemsSource =rendezes;
+        }
     }
 }

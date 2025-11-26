@@ -20,6 +20,7 @@
             <Button Content="Csak sci-fi" Margin="5" Click="CsakScifiSzures"/>
             <Button Content="Csak címek" Margin="5" Click="CsakCimek"/>
             <Button Content="Jol ertekelt filmek" Margin="5" Click="jolErtekelt"/>
+            <Button Content="Rendezés cím szerint" Margin="5" Click="cimRend"/>
 
         </StackPanel>
 
