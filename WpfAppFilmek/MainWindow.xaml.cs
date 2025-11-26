@@ -64,5 +64,17 @@ namespace WpfAppFilmek
                 MessageBox.Show("Nincsenek betöltve a filmek.");
             }
         }
+
+        private void AtlagErtekeles(object sender, RoutedEventArgs e)
+        {
+            double atlag = 0;
+            int index = 0;
+            foreach (var item in filmList)
+            {
+                atlag += item.Ertekeles;
+                index++;
+            }
+            MessageBox.Show($"{atlag / index} a filmek értékelésének átlaga");
+        }
     }
 }
