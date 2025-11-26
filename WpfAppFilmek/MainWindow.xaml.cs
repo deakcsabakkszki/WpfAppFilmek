@@ -109,5 +109,13 @@ namespace WpfAppFilmek
             var rendezes = filmList.OrderBy(f=> f.Cim).ToList();
             FilmekDG.ItemsSource =rendezes;
         }
+
+        private void Valtozas(object sender, SelectionChangedEventArgs e)
+        {
+            if (FilmekDG.SelectedItem != null && FilmekDG.SelectedItem is Film)
+            {
+                progressBar.Value = ((Film)FilmekDG.SelectedItem).Ertekeles;
+            }
+        }
     }
 }

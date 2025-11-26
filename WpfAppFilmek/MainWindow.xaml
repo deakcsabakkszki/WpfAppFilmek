@@ -11,7 +11,7 @@
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="FilmekDG" Grid.Column="1" />
+        <DataGrid x:Name="FilmekDG" Grid.Column="1" SelectionChanged="Valtozas" />
         <StackPanel>
             <Button Content="Filmek betöltése" Click="FilmBetolt_Click" Margin="5"/>
             <Button Content="Hány film van" Click="FilmekSzama_Click" Margin="5"/>
@@ -21,7 +21,7 @@
             <Button Content="Csak címek" Margin="5" Click="CsakCimek"/>
             <Button Content="Jol ertekelt filmek" Margin="5" Click="jolErtekelt"/>
             <Button Content="Rendezés cím szerint" Margin="5" Click="cimRend"/>
-
+            <ProgressBar x:Name="progressBar" Margin="5" Height="20" Minimum="0" Maximum="10" />
         </StackPanel>
 
 
